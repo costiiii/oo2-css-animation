@@ -1,0 +1,39 @@
+body{
+    background-image: url(gdashbg.png);
+    background-size: cover;
+    min-height: 95vh;
+  }
+  
+  .game-container{
+    width: 100px;
+    position: absolute;
+    left: 11%;
+    top: 35%;
+    /* forwards the animation remain in the state of the end */
+    animation: birdAnim 4s  infinite;
+  }
+  
+  .game-container img{
+    width: 100%;
+  }
+  
+  @keyframes birdAnim{
+    0%{
+      left: 0%;
+      top: 50%;
+    }
+    30%{
+      left: 30%;
+      top: 50%;
+    }
+    60%{
+      left: 60%;
+      top: 50%;
+  
+    }
+    100%{
+      left: 100%;
+      top: 50%;
+      
+    }
+  }
